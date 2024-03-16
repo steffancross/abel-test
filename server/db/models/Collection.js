@@ -2,7 +2,7 @@ const Sequelize = require("sequelize");
 const db = require("../db");
 
 const Collection = db.define("collection", {
-  collection: {
+  collectionNum: {
     type: Sequelize.INTEGER,
   },
   img: {

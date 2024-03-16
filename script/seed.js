@@ -9,11 +9,11 @@ const omb = require("./omb");
 const cats = require("./cats");
 
 const ombCollection = omb.map((data) => {
-  return { collection: 1, ...data };
+  return { collectionNum: 1, ...data };
 });
 
 const catsCollection = cats.map((data) => {
-  return { collection: 2, ...data };
+  return { collectionNum: 2, ...data };
 });
 
 /**
