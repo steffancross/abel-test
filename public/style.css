@@ -1,21 +1,61 @@
 body {
   font-family: sans-serif;
+  color: #a8a8a8;
+  background-color: black;
+  margin: 0;
 }
 
 a {
   text-decoration: none;
 }
 
-label {
-  display: block;
+a:visited {
+  color: white;
 }
 
-nav a {
-  display: inline-block;
-  margin: 1em;
+.when-collected {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.7;
 }
 
-form div {
-  margin: 1em;
-  display: inline-block;
+.base {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 50px 50px 0 50px;
+}
+
+.landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing a {
+  padding: 0 5px 0 5px;
+}
+.landing a:hover {
+  text-decoration: underline;
+}
+
+.collection-wrapper {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, minmax(100px, 0.6fr));
+}
+
+.single {
+  display: flex;
+  flex-direction: column;
+}
+
+.single img {
+  width: 100%;
+}
+
+.single p {
+  margin-bottom: 0;
 }

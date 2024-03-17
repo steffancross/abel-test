@@ -27,16 +27,21 @@ const Collection = () => {
   }, [symbol]);
 
   return (
-    <div className="collection-wrapper">
-      {collectionData.length > 0 &&
-        collectionData.map((data) => (
-          <div key={data.id} className="single">
-            <img src={data.img}></img>
-            <p>{data.inscription}</p>
-            <p>{data.price} BTC</p>
-          </div>
-        ))}
-    </div>
+    <>
+      <div className="collection-wrapper">
+        {collectionData.length > 0 &&
+          collectionData.map((data) => (
+            <div key={data.id} className="single">
+              <img src={data.img}></img>
+              <p>{data.inscription}</p>
+              {data.price === "" ? <p>UNLISTED</p> : <p>{data.price} BTC</p>}
+            </div>
+          ))}
+      </div>
+      <div className="when-collected">
+        <h1>COLLECTED 03.16.2024 2:24PM</h1>
+      </div>
+    </>
   );
 };
 

@@ -7,7 +7,7 @@ import { me } from "./store";
 
 const AppRoutes = () => {
   return (
-    <div>
+    <div className="base">
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/collections" element={<Collection />} />
