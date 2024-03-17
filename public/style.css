@@ -7,10 +7,11 @@ body {
 
 a {
   text-decoration: none;
+  color: #a8a8a8;
 }
 
 a:visited {
-  color: white;
+  color: #a8a8a8;
 }
 
 .when-collected {
