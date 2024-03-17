@@ -27,11 +27,13 @@ const Collection = () => {
   }, [symbol]);
 
   return (
-    <div>
+    <div className="collection-wrapper">
       {collectionData.length > 0 &&
         collectionData.map((data) => (
-          <div key={data.id}>
-            <p>{data.price}</p>
+          <div key={data.id} className="single">
+            <img src={data.img}></img>
+            <p>{data.inscription}</p>
+            <p>{data.price} BTC</p>
           </div>
         ))}
     </div>
